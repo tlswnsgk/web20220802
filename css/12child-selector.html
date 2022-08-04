@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p{
+            text-decoration: underline;
+        }
+        /* child selector >  */
+        .error > p{
+            background-color: yellow;
+        }
+        
+            div > p{
+                border: 3px solid;
+            }
+    </style>
+</head>
+<body>
+    <!-- .note>.error>p>lorem -->
+    <div class="note">
+        <div class="error">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptatibus officia velit nobis mollitia deleniti quaerat odit alias id quod numquam dolor maxime dolorum quae labore accusamus nulla, corrupti enim.
+            </p>
+        </div>
+    </div>
+    <!-- .error>note>p>lorem -->
+        <div class="error">
+            <div class="note">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aut unde nihil neque. Quisquam provident dolorem sed maxime deserunt unde in reprehenderit harum nostrum ullam. Placeat molestias distinctio quo saepe!
+                </p>
+            </div>
+        </div>
+
+</body>
+</html>
